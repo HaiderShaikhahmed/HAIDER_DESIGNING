@@ -1,435 +1,630 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Haider Designing — Brand & Packaging Designer</title>
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <meta name="description" content="Haider Designing — Logo, Packaging & Social Media Graphics. Portfolio and contact page." />
-  <style>
-    :root{
-      --accent:#20c997; /* mint/green accent */
-      --dark:#0f1724;
-      --muted:#6b7280;
-      --card:#0b1220;
-    }
-    html,body{height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
-    body{background:linear-gradient(180deg,#05060a 0%, #071027 100%);color:#e6eef8}
-    .navbar{backdrop-filter: blur(6px);background:rgba(8,10,18,0.6);}
-    .brand-badge{background:linear-gradient(90deg,#06b6d4,#7c3aed);padding:6px 10px;border-radius:999px;font-weight:700}
-    .hero{padding:80px 0}
-    .hero .title{font-size:2.4rem;font-weight:800;line-height:1.02}
-    .subtitle{color:var(--muted);font-weight:500}
-    .chip{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.03);padding:6px 10px;border-radius:8px}
-    .portfolio-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);transition:transform .28s ease, box-shadow .28s ease}
-    .portfolio-card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
-    .meta{color:var(--muted);font-size:0.86rem}
-    .cta-ghost{border:1px solid rgba(255,255,255,0.08);background:transparent}
-    .section-title{font-weight:700;margin-bottom:18px}
-    .filter-btn.active{background:var(--accent);color:#042024}
-    .contact-card{background:linear-gradient(180deg,#06202b,#051726);border:1px solid rgba(255,255,255,0.03)}
-    footer{padding:24px 0;color:var(--muted);font-size:.92rem}
-    /* Responsive tweaks */
-    @media(min-width:992px){
-      .hero .title{font-size:3.2rem}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haider Shaikh | UI/UX & Graphic Designer</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <div class="brand-badge">Haider</div>
-        <div class="ms-2 text-white-50">Designing</div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-          <li class="nav-item ms-2"><a class="btn btn-sm btn-light text-dark" href="#contact">Hire Me</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-6">
-          <p class="chip mb-3">Branding • Packaging • Social Media</p>
-          <h1 class="title">I design memorable <span style="color:var(--accent)">brands</span> & product packaging that sell.</h1>
-          <p class="subtitle mt-3">I'm Haider — a graphic & packaging designer from Hyderabad, Pakistan. I help startups and local brands build identities that customers trust. Scroll to see my best work.</p>
-
-          <div class="d-flex gap-2 mt-4">
-            <a href="#portfolio" class="btn btn-lg btn-primary">View Portfolio</a>
-            <a href="#contact" class="btn btn-lg cta-ghost text-white">Get a Quote</a>
-          </div>
-
-          <ul class="d-flex gap-3 list-unstyled mt-4">
-            <li class="meta"><strong>193</strong> Posts</li>
-            <li class="meta"><strong>1,062</strong> Followers</li>
-            <li class="meta"><strong>3,242</strong> Following</li>
-          </ul>
+    
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">HAIDER</a>
+            <a class="navbar-brand1" href="#hero">Designing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-lg-6 text-center">
-          <!-- mockup hero image grid -->
-          <div class="row g-3 justify-content-center">
-            <div class="col-6 col-md-4">
-              <div class="portfolio-card p-3 rounded-3">
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=123" class="img-fluid rounded" alt="sample" />
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="portfolio-card p-3 rounded-3">
-                <img src="https://images.unsplash.com/photo-1545235617-9465f6a1e37d?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=124" class="img-fluid rounded" alt="sample2" />
-              </div>
-            </div>
-            <div class="col-10 mt-3">
-              <div class="portfolio-card p-4 rounded-3">
-                <h5 class="mb-2">Selected Work</h5>
-                <p class="meta">Logo • Packaging • Social</p>
-                <div class="d-flex gap-2 mt-3">
-                  <a class="btn btn-sm btn-outline-light" href="#portfolio">Explore</a>
-                  <a class="btn btn-sm btn-light text-dark" href="#contact">Hire Me</a>
+    </nav>
+    
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">Graphic Designer</p>
+                        <h1 class="hero-title">Hi, I'm <span>Haider Shaikh</span></h1>
+                        <p class="hero-description">
+                            UI/UX & Graphic Designer specializing in creating stunning visual experiences. 
+                            Based in Latifabad, Hyderabad, Pakistan.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn-primary-custom">View Portfolio</a>
+                            <a href="#contact" class="btn-secondary-custom">Hire Me</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container text-center">
+                        <img src="/HAIDER_DESIGNING/images/mainpics/w_dp.jpg" alt="Haider Shaikh" class="hero-image">
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+    <!-- ========== FEATURED WORKS SECTION ========== -->
+    <section id="featured-works" style="padding: 100px 0; background: var(--secondary-dark);">
+        <div class="container">
+
+<!-- HERO CAROUSEL -->
+<div id="hero-carousel" class="relative w-full mb-5" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative overflow-hidden rounded-lg carousel-wrapper">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+            <img src="/HAIDER_DESIGNING/images/logo/bootique/bootique_logo.png" class="carousel-img" alt="Design 1">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+            <img src="/HAIDER_DESIGNING/images/logo/bootique/bootique_logo.png" class="carousel-img" alt="Design 2">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='500' viewBox='0 0 700 500'%3E%3Crect fill='%23555' width='700' height='500'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-size='36' fill='%23fff' font-weight='600'%3EBranding Showcase%3C/text%3E%3C/svg%3E" class="carousel-img" alt="Design 3">
+        </div>
     </div>
-  </header>
-
-  <!-- PORTFOLIO -->
-  <section id="portfolio" class="py-5">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <div>
-          <h2 class="section-title">Portfolio</h2>
-          <p class="meta">Selected projects — logos, packaging and social campaigns.</p>
-        </div>
-        <div>
-          <div class="btn-group" role="group" aria-label="filters">
-            <button class="btn btn-sm btn-outline-light filter-btn active" data-filter="all">All</button>
-            <button class="btn btn-sm btn-outline-light filter-btn" data-filter="logo">Logo</button>
-            <button class="btn btn-sm btn-outline-light filter-btn" data-filter="packaging">Packaging</button>
-            <button class="btn btn-sm btn-outline-light filter-btn" data-filter="social">Social</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row g-3" id="portfolioGrid">
-        <!-- Project item template -->
-        <!-- 1 -->
-        <div class="col-12 col-md-6 col-lg-4 project-item" data-type="packaging">
-          <div class="portfolio-card p-3 rounded-3 h-100">
-            <img src="https://images.unsplash.com/photo-1602524810885-0d9a3b2f3b2e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=125" class="img-fluid rounded mb-3" alt="project1">
-            <h5>Green Apple Tea Packaging</h5>
-            <p class="meta">Packaging • Brand</p>
-            <div class="mt-3 d-flex justify-content-between align-items-center">
-              <button class="btn btn-sm btn-outline-light view-btn">View</button>
-              <small class="meta">2025</small>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="col-12 col-md-6 col-lg-4 project-item" data-type="logo">
-          <div class="portfolio-card p-3 rounded-3 h-100">
-            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=126" class="img-fluid rounded mb-3" alt="project2">
-            <h5>Family First Financial</h5>
-            <p class="meta">Logo • Identity</p>
-            <div class="mt-3 d-flex justify-content-between align-items-center">
-              <button class="btn btn-sm btn-outline-light view-btn">View</button>
-              <small class="meta">2025</small>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="col-12 col-md-6 col-lg-4 project-item" data-type="social">
-          <div class="portfolio-card p-3 rounded-3 h-100">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=127" class="img-fluid rounded mb-3" alt="project3">
-            <h5>Social Ads — Travel Campaign</h5>
-            <p class="meta">Social • Ad</p>
-            <div class="mt-3 d-flex justify-content-between align-items-center">
-              <button class="btn btn-sm btn-outline-light view-btn">View</button>
-              <small class="meta">2024</small>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4 Additional items (repeat) -->
-        <div class="col-12 col-md-6 col-lg-4 project-item" data-type="logo">
-          <div class="portfolio-card p-3 rounded-3 h-100">
-            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=128" class="img-fluid rounded mb-3" alt="project4">
-            <h5>Tahani — Premium Label</h5>
-            <p class="meta">Logo • Label</p>
-            <div class="mt-3 d-flex justify-content-between align-items-center">
-              <button class="btn btn-sm btn-outline-light view-btn">View</button>
-              <small class="meta">2023</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 project-item" data-type="packaging">
-          <div class="portfolio-card p-3 rounded-3 h-100">
-            <img src="https://images.unsplash.com/photo-1606312619342-1c1bb8d8a6ea?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=129" class="img-fluid rounded mb-3" alt="project5">
-            <h5>Freshener Bottle Label</h5>
-            <p class="meta">Packaging • Label</p>
-            <div class="mt-3 d-flex justify-content-between align-items-center">
-              <button class="btn btn-sm btn-outline-light view-btn">View</button>
-              <small class="meta">2024</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 project-item" data-type="social">
-          <div class="portfolio-card p-3 rounded-3 h-100">
-            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=130" class="img-fluid rounded mb-3" alt="project6">
-            <h5>Promotional Poster Series</h5>
-            <p class="meta">Social • Poster</p>
-            <div class="mt-3 d-flex justify-content-between align-items-center">
-              <button class="btn btn-sm btn-outline-light view-btn">View</button>
-              <small class="meta">2022</small>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    
+    <!-- Slider indicators -->
+    <div class="carousel-indicators">
+        <button type="button" class="indicator-btn active" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="indicator-btn" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="indicator-btn" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
     </div>
-  </section>
+    
+    <!-- Slider controls -->
+    <button type="button" class="carousel-control carousel-control-prev" data-carousel-prev>
+        <span class="control-btn-inner">
+            <svg class="control-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="carousel-control carousel-control-next" data-carousel-next>
+        <span class="control-btn-inner">
+            <svg class="control-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
 
-  <!-- SERVICES -->
-  <section id="services" class="py-5 border-top" style="border-color:rgba(255,255,255,0.02)">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <h3 class="section-title">Services I Offer</h3>
-          <p class="meta">Branding, packaging, product labels, social media campaigns & quick-turn logos.</p>
-          <ul class="mt-3">
-            <li class="meta">• Brand identity & logo design</li>
-            <li class="meta">• Product packaging & labels</li>
-            <li class="meta">• Social media post templates</li>
-            <li class="meta">• Mockups & presentation</li>
-            <li class="meta">• Fast-turn (24–72 hrs) options</li>
-          </ul>
-          <div class="mt-3">
-            <a class="btn btn-outline-light btn-sm" href="#contact">Request Pricing</a>
-          </div>
+
+<!-- PINTEREST GRID -->
+<div class="pinterest-grid">
+
+
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="logo">
+<img src="/HAIDER_DESIGNING/images/logo/bootique/bootique_logo.png" alt="Logo Design">
+<div class="portfolio-overlay">
+<h4>Modern Logo</h4>
+<p>Logo Design</p>
+</div>
+</div>
+
+
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="logo">
+<img src="/HAIDER_DESIGNING/images/logo/bootique/Sub_bootique1.png" alt="Logo Design 2">
+<div class="portfolio-overlay">
+<h4>Logo Exploration</h4>
+<p>Brand Identity</p>
+</div>
+</div>
+
+
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
+<img src="/HAIDER_DESIGNING/images/logo/bootique/Sub_bootique2.png" alt="Branding">
+<div class="portfolio-overlay">
+<h4>Corporate Branding</h4>
+<p>Branding</p>
+</div>
+</div>
+
+
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
+<img src="/HAIDER_DESIGNING/images/logo/coffee/cofee-1.png" alt="Branding 2">
+<div class="portfolio-overlay">
+<h4>Brand Identity 2</h4>
+<p>Branding</p>
+</div>
+</div>
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
+<img src="/HAIDER_DESIGNING/images/logo/coffee/cofee-2.png" alt="Branding 2">
+<div class="portfolio-overlay">
+<h4>Brand Identity 2</h4>
+<p>Branding</p>
+</div>
+</div>
+
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
+<img src="/HAIDER_DESIGNING/images/logo/artist/2Artist.png" alt="Branding 2">
+<div class="portfolio-overlay">
+<h4>Brand Identity 2</h4>
+<p>Branding</p>
+</div>
+</div>
+
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
+<img src="/HAIDER_DESIGNING/images/logo/artist/Artist.png" alt="Branding 2">
+<div class="portfolio-overlay">
+<h4>Brand Identity 2</h4>
+<p>Branding</p>
+</div>
+</div>
+
+<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
+<img src="/HAIDER_DESIGNING/images/logo/artist/1Artist.png" alt="Branding 2">
+<div class="portfolio-overlay">
+<h4>Brand Identity 2</h4>
+<p>Branding</p>
+</div>
+</div>
+</div>
+<div class="text-center mt-5">
+    <a href="#portfolio" class="btn-view-more">View More Portfolio</a>
+</div>
+</div>
+</section>
+
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">My <span>Services</span></h2>
+            <p class="section-subtitle">What I offer to bring your ideas to life</p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="service-title">Graphic Design</h3>
+                        <p class="service-description">Creating eye-catching logos, business cards, flyers, and branding materials.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">Designing beautiful and user-friendly interfaces for websites and apps.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3 class="service-title">Logo Design</h3>
+                        <p class="service-description">Crafting unique and memorable logos that represent your brand.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3 class="service-title">Social Media Design</h3>
+                        <p class="service-description">Creating engaging posts and ads that boost your online presence.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3 class="service-title">Business Cards</h3>
+                        <p class="service-description">Professional business cards that make a strong impression.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3 class="service-title">Packaging Design</h3>
+                        <p class="service-description">Attractive packaging that showcases your products perfectly.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-8">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <div class="contact-card p-3 rounded-3 h-100">
-                <h5>Brand Identity</h5>
-                <p class="meta">Logo grid, color suite & brand guidelines for consistent presence.</p>
-              </div>
+    </section>
+    
+    <!-- ========== PORTFOLIO SECTION ========== -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My <span>Portfolio</span></h2>
+            <p class="section-subtitle">Check out some of my recent work</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="logo">Logos</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
             </div>
-            <div class="col-md-6">
-              <div class="contact-card p-3 rounded-3 h-100">
-                <h5>Packaging Design</h5>
-                <p class="meta">Concepts, dielines, print-ready files and 3D mockups.</p>
-              </div>
+            
+            <div class="pinterest-grid" id="portfolio-grid">
+                <div class="pinterest-item" data-category="logo">
+                    <img src="/HAIDER_DESIGNING//images/posts/travelling/travelling.png" alt="Logo Design">
+                    <div class="portfolio-overlay">
+                        <h4>Bootique Logo</h4>
+                        <p>Logo Design</p>
+                    </div>
+                </div>
+                
+                <div class="pinterest-item" data-category="branding">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='350' viewBox='0 0 400 350'%3E%3Crect fill='%23FFEB3B' width='400' height='350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins' font-size='24' fill='%23000' font-weight='700'%3EBranding 1%3C/text%3E%3C/svg%3E" alt="Branding">
+                    <div class="portfolio-overlay">
+                        <h4>Brand Identity</h4>
+                        <p>Branding</p>
+                    </div>
+                </div>
+                
+                <div class="pinterest-item" data-category="social">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='350' viewBox='0 0 400 350'%3E%3Crect fill='%23000' width='400' height='350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins' font-size='24' fill='%23FFEB3B' font-weight='700'%3ESocial Media%3C/text%3E%3C/svg%3E" alt="Social">
+                    <div class="portfolio-overlay">
+                        <h4>Social Campaign</h4>
+                        <p>Social Media</p>
+                    </div>
+                </div>
+                
+                <div class="pinterest-item" data-category="logo">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='350' viewBox='0 0 400 350'%3E%3Crect fill='%23FFEB3B' width='400' height='350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins' font-size='24' fill='%23000' font-weight='700'%3ELogo Design 2%3C/text%3E%3C/svg%3E" alt="Logo 2">
+                    <div class="portfolio-overlay">
+                        <h4>Modern Logo</h4>
+                        <p>Logo Design</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <div class="contact-card p-3 rounded-3 h-100">
-                <h5>Social Campaigns</h5>
-                <p class="meta">Social-first visuals tailored to engagement and conversions.</p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="contact-card p-3 rounded-3 h-100">
-                <h5>Fast Edits</h5>
-                <p class="meta">Quick edits, revisions and format exports for stores & ads.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+
+<script>
+// Custom Carousel Functionality
+class HeroCarousel {
+    constructor() {
+        this.carousel = document.getElementById('hero-carousel');
+        this.items = this.carousel.querySelectorAll('[data-carousel-item]');
+        this.indicators = this.carousel.querySelectorAll('[data-carousel-slide-to]');
+        this.currentIndex = 0;
+        this.autoplayInterval = null;
+        
+        this.init();
+    }
+    
+    init() {
+        // Next button
+        this.carousel.querySelector('[data-carousel-next]').addEventListener('click', () => this.next());
+        // Prev button
+        this.carousel.querySelector('[data-carousel-prev]').addEventListener('click', () => this.prev());
+        // Indicators
+        this.indicators.forEach((btn, index) => {
+            btn.addEventListener('click', () => this.goTo(index));
+        });
+        
+        this.show(0);
+        this.startAutoplay();
+    }
+    
+    show(index) {
+        this.currentIndex = (index + this.items.length) % this.items.length;
+        
+        // Hide all items
+        this.items.forEach(item => {
+            item.classList.add('hidden');
+        });
+        
+        // Show current item
+        this.items[this.currentIndex].classList.remove('hidden');
+        
+        // Update indicators
+        this.indicators.forEach((btn, i) => {
+            btn.classList.toggle('active', i === this.currentIndex);
+        });
+    }
+    
+    next() {
+        this.show(this.currentIndex + 1);
+        this.resetAutoplay();
+    }
+    
+    prev() {
+        this.show(this.currentIndex - 1);
+        this.resetAutoplay();
+    }
+    
+    goTo(index) {
+        this.show(index);
+        this.resetAutoplay();
+    }
+    
+    startAutoplay() {
+        this.autoplayInterval = setInterval(() => this.show(this.currentIndex + 1), 3000);
+    }
+    
+    resetAutoplay() {
+        clearInterval(this.autoplayInterval);
+        this.startAutoplay();
+    }
+}
+
+// Initialize carousel on page load
+document.addEventListener('DOMContentLoaded', () => {
+    new HeroCarousel();
+});
+</script>
+    <!-- ========== CONTACT SECTION ========== -->
+   
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">Let's work together on your next project</p>
+            
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-5 mb-4">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Location</h5>
+                                <p>Latifabad, Hyderabad, Sindh 71000<br>Pakistan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Phone</h5>
+                                <p>+92 321 8455775</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Email</h5>
+                                <p>Available via Instagram DM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/haider_designing" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Send Me a Message</h3>
+                        <form id="contactForm">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Haider Shaikh. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #FFEB3B;"></i> by Haider Designing</p>
+        </div>
+    </footer>
+    
+    <!-- ========== FEEDBACK MODAL ========== -->
+    <div class="feedback-modal" id="feedbackModal">
+        <div class="feedback-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h3>How was your experience?</h3>
+            <p>We'd love to hear your feedback!</p>
+            
+            <div class="rating-stars" id="ratingStars">
+                <i class="fas fa-star star" data-rating="1"></i>
+                <i class="fas fa-star star" data-rating="2"></i>
+                <i class="fas fa-star star" data-rating="3"></i>
+                <i class="fas fa-star star" data-rating="4"></i>
+                <i class="fas fa-star star" data-rating="5"></i>
+            </div>
+            
+            <textarea class="form-control" id="feedbackText" placeholder="Tell us more about your experience (optional)"></textarea>
+            <button class="btn-submit" id="submitFeedback">Submit Feedback</button>
+        </div>
     </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-5">
-          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=131" class="img-fluid rounded-3 shadow" alt="Haider">
-        </div>
-        <div class="col-md-7">
-          <h3 class="section-title">About Me</h3>
-          <p class="meta">I'm Haider — a freelance graphic designer specializing in brand identity and packaging. I craft designs that are simple, memorable and built to convert.</p>
-          <ul class="mt-3">
-            <li class="meta">• 5+ years designing for local brands</li>
-            <li class="meta">• Fast & clear communication</li>
-            <li class="meta">• Source files delivered (AI, PSD, PDF)</li>
-            <li class="meta">• Print-ready artwork & dielines</li>
-          </ul>
-          <div class="mt-4">
-            <a class="btn btn-primary me-2" href="#contact">Work With Me</a>
-            <a class="btn btn-outline-light" href="https://wa.me/923184855775" target="_blank">Message on WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="py-5 border-top" style="border-color:rgba(255,255,255,0.02)">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="section-title">Let's start your project</h3>
-          <p class="meta">Tell me about your brand, timeline and budget. I'll reply with a clear plan and price.</p>
-
-          <form id="contactForm" class="mt-3">
-            <div class="mb-3">
-              <label class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" required placeholder="Type brief: service, timeline, budget..."></textarea>
-            </div>
-            <div class="d-flex gap-2">
-              <button type="submit" class="btn btn-primary">Send message</button>
-              <a class="btn btn-outline-light" href="mailto:haider@example.com">Or Email</a>
-            </div>
-            <div id="formAlert" class="visually-hidden mt-3"></div>
-          </form>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-4 rounded-3 contact-card">
-            <h5>Quick Contact</h5>
-            <p class="meta">Hyderabad, Sindh • Available for remote work • Urdu / English</p>
-            <p class="mt-2 mb-0"><strong>WhatsApp:</strong> <a class="text-decoration-none" href="https://wa.me/923184855775">+92 318 4855775</a></p>
-            <p class="mt-1"><strong>Email:</strong> <a class="text-decoration-none" href="mailto:haider@example.com">haider@example.com</a></p>
-
-            <div class="mt-4">
-              <h6 class="mb-2">Pricing (starting)</h6>
-              <ul class="meta">
-                <li>Logo design — <strong>PKR 2,500</strong></li>
-                <li>Packaging design — <strong>PKR 4,000</strong></li>
-                <li>Social kit (5 posts) — <strong>PKR 2,000</strong></li>
-              </ul>
-            </div>
-
-            <div class="mt-4">
-              <a class="btn btn-light btn-sm" href="#contact" id="bookBtn">Get Quote</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="border-top text-center mt-5" style="border-color:rgba(255,255,255,0.02)">
-    <div class="container py-3">
-      <div class="d-flex justify-content-center gap-3 mb-2">
-        <a class="text-decoration-none meta" href="#">Instagram</a>
-        <a class="text-decoration-none meta" href="#">Behance</a>
-        <a class="text-decoration-none meta" href="#">WhatsApp</a>
-      </div>
-      <small>© 2025 Haider Designing — All rights reserved.</small>
-    </div>
-  </footer>
-
-  <!-- Modal for project view -->
-  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content bg-dark">
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Project</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div id="modalContent"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // FILTERS
-    document.querySelectorAll('.filter-btn').forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        document.querySelectorAll('.project-item').forEach(item=>{
-          if(filter==='all' || item.dataset.type===filter) item.style.display='block';
-          else item.style.display='none';
-        })
-      })
-    })
-
-    // VIEW BUTTON (opens modal with larger image and description)
-    document.querySelectorAll('.view-btn').forEach((b, idx)=>{
-      b.addEventListener('click', (e)=>{
-        const card = e.target.closest('.portfolio-card');
-        const img = card.querySelector('img').src;
-        const title = card.querySelector('h5').innerText;
-        const meta = card.querySelector('.meta').innerText;
-        const html = `
-          <div class=\"row\"> 
-            <div class=\"col-md-7\"> <img src=\"${img}\" class=\"img-fluid rounded\"/> </div>
-            <div class=\"col-md-5\"> <h4>${title}</h4> <p class=\"meta\">${meta}</p>
-              <p class=\"mt-3\">Short project description goes here — client brief, challenge, and solution. Final files delivered: AI, PDF, PNG.</p>
-              <a class=\"btn btn-primary mt-3\" href=\"#contact\">Request Similar Work</a>
-            </div>
-          </div>
-        `;
-        document.getElementById('modalContent').innerHTML = html;
-        const modal = new bootstrap.Modal(document.getElementById('projectModal'));
-        modal.show();
-      })
-    })
-
-    // CONTACT FORM (no backend) -> create mailto or show toast
-    document.getElementById('contactForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const subject = encodeURIComponent('New design inquiry from ' + name);
-      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
-      // open user's email client
-      window.location.href = `mailto:haider@example.com?subject=${subject}&body=${body}`;
-      // show subtle feedback
-      const alert = document.getElementById('formAlert');
-      alert.classList.remove('visually-hidden');
-      alert.classList.add('alert','alert-success');
-      alert.innerText = 'Email client opened — if nothing opened, email me at haider@example.com';
-    });
-
-    // Smooth anchor scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        const href = this.getAttribute('href');
-        if(href.length>1){
-          e.preventDefault();
-          const el = document.querySelector(href);
-          if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // ========== FEEDBACK MODAL FUNCTIONALITY ==========
+        // Show modal on page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('feedbackModal').classList.add('show');
+            }, 2000); // Shows after 2 seconds
+        });
+        
+        // Close modal
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('feedbackModal').classList.remove('show');
+        });
+        
+        // Close modal when clicking outside
+        document.getElementById('feedbackModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('show');
+            }
+        });
+        
+        // Star rating functionality
+        const stars = document.querySelectorAll('.star');
+        let selectedRating = 0;
+        
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                selectedRating = this.getAttribute('data-rating');
+                updateStars(selectedRating);
+            });
+            
+            star.addEventListener('mouseover', function() {
+                const rating = this.getAttribute('data-rating');
+                updateStars(rating);
+            });
+        });
+        
+        document.getElementById('ratingStars').addEventListener('mouseout', function() {
+            updateStars(selectedRating);
+        });
+        
+        function updateStars(rating) {
+            stars.forEach(star => {
+                if (star.getAttribute('data-rating') <= rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
         }
-      })
-    })
-  </script>
+        
+        // Submit feedback
+        document.getElementById('submitFeedback').addEventListener('click', function() {
+            const feedbackText = document.getElementById('feedbackText').value;
+            
+            if (selectedRating === 0) {
+                alert('Please select a rating before submitting!');
+                return;
+            }
+            
+            // Here you can add code to send feedback to your server
+            console.log('Rating:', selectedRating);
+            console.log('Feedback:', feedbackText);
+            
+            alert('Thank you for your feedback!');
+            document.getElementById('feedbackModal').classList.remove('show');
+        });
+        
+        // ========== PORTFOLIO FILTER FUNCTIONALITY ==========
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('#portfolio-grid .pinterest-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // ========== CONTACT FORM SUBMISSION ==========
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you can add code to send form data to your server
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+        
+        // ========== SMOOTH SCROLL FOR NAVIGATION ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+        
+        // ========== NAVBAR BACKGROUND ON SCROLL ==========
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+    </script>
 </body>
 </html>
