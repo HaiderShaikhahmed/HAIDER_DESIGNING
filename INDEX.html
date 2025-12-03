@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haider Shaikh | UI/UX & Graphic Designer</title>
-    
+    <title>HAIDER DESIGNING | Premium Graphic Design Services</title>
+    <link rel="icons" href="images//mainpics/w_dp.jpg">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-    <!-- Font Awesome for icons -->
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    
-    <!-- External CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Montserrat:wght@800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <!-- ========== NAVIGATION ========== -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#hero">HAIDER</a>
-            <a class="navbar-brand1" href="#hero">Designing</a>
+            <a class="navbar-brand" href="#home">HAIDER</a>
+            <a class="navbar-brand-sub" href="#home">DESIGNING</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#hero">About us</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
@@ -41,590 +44,579 @@
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-instagram" href="https://instagram.com/haider_designing" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
+
     <!-- ========== HERO SECTION ========== -->
-    <section id="hero" class="mt-5">
+    <section id="home" class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6">
                     <div class="hero-content">
-                        <p class="hero-subtitle">Graphic Designer</p>
-                        <h1 class="hero-title">Hi, I'm <span>Haider Shaikh</span></h1>
+                        <span class="hero-badge">Premium Graphic Designer & UI/UX Designer</span>
+                        <h1 class="hero-title">
+                            <span class="typing-text">Transform Your Ideas in to reality</span>
+                        </h1>
                         <p class="hero-description">
-                            UI/UX & Graphic Designer specializing in creating stunning visual experiences. 
-                            Based in Latifabad, Hyderabad, Pakistan.
+                            I create eye-catching logos, business cards, social media posts,
+                            and packaging designs that make your brand unforgettable.
+                            Based in Hyderabad, Pakistan.
                         </p>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3><span class="stat-counter" data-target="193">0</span>+</h3>
+                                <p>Projects</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3><span class="stat-counter" data-target="1063">0</span>+</h3>
+                                <p>Followers</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3><span class="stat-counter" data-target="100">0</span>%</h3>
+                                <p>Satisfaction</p>
+                            </div>
+                        </div>
+
                         <div class="hero-buttons">
-                            <a href="#portfolio" class="btn-primary-custom">View Portfolio</a>
-                            <a href="#contact" class="btn-secondary-custom">Hire Me</a>
+                            <a href="#contact" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i> Start Your Project
+                            </a>
+                            <a href="#portfolio" class="btn-secondary">
+                                <i class="fas fa-eye"></i> View Portfolio
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="hero-image-container text-center">
-                        <img src="/HAIDER_DESIGNING/images/mainpics/w_dp.jpg" alt="Haider Shaikh" class="hero-image">
+                    <div class="hero-image-container">
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                        <img src="images/mainpics/w_dp.jpg" alt="Main Pics" class="hero-image">
+                        <div class="hero-cta-card">
+                            <h4>Ready to Elevate Your Brand?</h4>
+                            <p>DM me on Instagram for custom designs!</p>
+                            <a href="https://instagram.com/haider_designing" target="_blank"
+                                class="btn-instagram-small">
+                                <i class="fab fa-instagram"></i> @haider_designing
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
 
-    <!-- ========== FEATURED WORKS SECTION ========== -->
-    <section id="featured-works" style="padding: 100px 0; background: var(--secondary-dark);">
-        <div class="container">
-
-<!-- HERO CAROUSEL -->
-<div id="hero-carousel" class="relative w-full mb-5" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative overflow-hidden rounded-lg carousel-wrapper">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
-            <img src="/HAIDER_DESIGNING/images/logo/bootique/bootique_logo.png" class="carousel-img" alt="Design 1">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
-            <img src="/HAIDER_DESIGNING/images/logo/bootique/bootique_logo.png" class="carousel-img" alt="Design 2">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out carousel-item" data-carousel-item>
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='500' viewBox='0 0 700 500'%3E%3Crect fill='%23555' width='700' height='500'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins, sans-serif' font-size='36' fill='%23fff' font-weight='600'%3EBranding Showcase%3C/text%3E%3C/svg%3E" class="carousel-img" alt="Design 3">
-        </div>
-    </div>
-    
-    <!-- Slider indicators -->
-    <div class="carousel-indicators">
-        <button type="button" class="indicator-btn active" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="indicator-btn" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="indicator-btn" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-    </div>
-    
-    <!-- Slider controls -->
-    <button type="button" class="carousel-control carousel-control-prev" data-carousel-prev>
-        <span class="control-btn-inner">
-            <svg class="control-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="carousel-control carousel-control-next" data-carousel-next>
-        <span class="control-btn-inner">
-            <svg class="control-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-
-
-<!-- PINTEREST GRID -->
-<div class="pinterest-grid">
-
-
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="logo">
-<img src="/HAIDER_DESIGNING/images/logo/bootique/bootique_logo.png" alt="Logo Design">
-<div class="portfolio-overlay">
-<h4>Modern Logo</h4>
-<p>Logo Design</p>
-</div>
-</div>
-
-
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="logo">
-<img src="/HAIDER_DESIGNING/images/logo/bootique/Sub_bootique1.png" alt="Logo Design 2">
-<div class="portfolio-overlay">
-<h4>Logo Exploration</h4>
-<p>Brand Identity</p>
-</div>
-</div>
-
-
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
-<img src="/HAIDER_DESIGNING/images/logo/bootique/Sub_bootique2.png" alt="Branding">
-<div class="portfolio-overlay">
-<h4>Corporate Branding</h4>
-<p>Branding</p>
-</div>
-</div>
-
-
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
-<img src="/HAIDER_DESIGNING/images/logo/coffee/cofee-1.png" alt="Branding 2">
-<div class="portfolio-overlay">
-<h4>Brand Identity 2</h4>
-<p>Branding</p>
-</div>
-</div>
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
-<img src="/HAIDER_DESIGNING/images/logo/coffee/cofee-2.png" alt="Branding 2">
-<div class="portfolio-overlay">
-<h4>Brand Identity 2</h4>
-<p>Branding</p>
-</div>
-</div>
-
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
-<img src="/HAIDER_DESIGNING/images/logo/artist/2Artist.png" alt="Branding 2">
-<div class="portfolio-overlay">
-<h4>Brand Identity 2</h4>
-<p>Branding</p>
-</div>
-</div>
-
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
-<img src="/HAIDER_DESIGNING/images/logo/artist/Artist.png" alt="Branding 2">
-<div class="portfolio-overlay">
-<h4>Brand Identity 2</h4>
-<p>Branding</p>
-</div>
-</div>
-
-<div class="pinterest-item animate__animated animate__fadeInUp" data-category="branding">
-<img src="/HAIDER_DESIGNING/images/logo/artist/1Artist.png" alt="Branding 2">
-<div class="portfolio-overlay">
-<h4>Brand Identity 2</h4>
-<p>Branding</p>
-</div>
-</div>
-</div>
-<div class="text-center mt-5">
-    <a href="#portfolio" class="btn-view-more">View More Portfolio</a>
-</div>
-</div>
-</section>
-
-
     <!-- ========== SERVICES SECTION ========== -->
-    <section id="services">
+    <section id="services" class="services-section">
         <div class="container">
-            <h2 class="section-title">My <span>Services</span></h2>
-            <p class="section-subtitle">What I offer to bring your ideas to life</p>
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="section-header">
+                <span class="section-subtitle">What I Offer</span>
+                <h2 class="section-title">My <span class="gradient-text">Design Services</span></h2>
+                <p class="section-description">
+                    From logos to complete brand identity packages, I provide comprehensive design solutions.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-palette"></i>
+                            <i class="fas fa-brush"></i>
                         </div>
-                        <h3 class="service-title">Graphic Design</h3>
-                        <p class="service-description">Creating eye-catching logos, business cards, flyers, and branding materials.</p>
+                        <h3>Logo Design</h3>
+                        <p>Unique and memorable logos that represent your brand perfectly.</p>
+                        <ul class="service-features">
+                            <li>3 Design Concepts</li>
+                            <li>Unlimited Revisions</li>
+                            <li>Vector Files Included</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3 class="service-title">UI/UX Design</h3>
-                        <p class="service-description">Designing beautiful and user-friendly interfaces for websites and apps.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-pencil-ruler"></i>
-                        </div>
-                        <h3 class="service-title">Logo Design</h3>
-                        <p class="service-description">Crafting unique and memorable logos that represent your brand.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-share-alt"></i>
-                        </div>
-                        <h3 class="service-title">Social Media Design</h3>
-                        <p class="service-description">Creating engaging posts and ads that boost your online presence.</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-id-card"></i>
                         </div>
-                        <h3 class="service-title">Business Cards</h3>
-                        <p class="service-description">Professional business cards that make a strong impression.</p>
+                        <h3>Business Cards</h3>
+                        <p>Professional business cards that make a lasting impression.</p>
+                        <ul class="service-features">
+                            <li>Modern Designs</li>
+                            <li>Print-Ready Files</li>
+                            <li>Multiple Layouts</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 col-md-6 mb-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <h3>Social Media Posts</h3>
+                        <p>Engaging social media content that boosts your online presence.</p>
+                        <ul class="service-features">
+                            <li>Custom Templates</li>
+                            <li>Platform-Specific</li>
+                            <li>Trendy Designs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-box"></i>
                         </div>
-                        <h3 class="service-title">Packaging Design</h3>
-                        <p class="service-description">Attractive packaging that showcases your products perfectly.</p>
+                        <h3>Packaging Design</h3>
+                        <p>Attractive packaging that showcases your products effectively.</p>
+                        <ul class="service-features">
+                            <li>3D Mockups</li>
+                            <li>Print Specifications</li>
+                            <li>Material Guides</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Brand Identity</h3>
+                        <p>Complete brand packages including colors, fonts, and guidelines.</p>
+                        <ul class="service-features">
+                            <li>Style Guide</li>
+                            <li>Color Palette</li>
+                            <li>Typography System</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>Banners & Flyers</h3>
+                        <p>Promotional materials that attract attention and drive sales.</p>
+                        <ul class="service-features">
+                            <li>Multiple Sizes</li>
+                            <li>High Resolution</li>
+                            <li>Quick Delivery</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- ========== PORTFOLIO SECTION ========== -->
-    <section id="portfolio">
+    <section id="portfolio" class="portfolio-section">
         <div class="container">
-            <h2 class="section-title">My <span>Portfolio</span></h2>
-            <p class="section-subtitle">Check out some of my recent work</p>
-            
-            <div class="portfolio-filters">
+            <div class="section-header">
+                <span class="section-subtitle">Recent Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Portfolio</span></h2>
+                <p class="section-description">
+                    Explore my latest design projects that have helped brands stand out.
+                </p>
+            </div>
+
+            <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="logo">Logos</button>
                 <button class="filter-btn" data-filter="branding">Branding</button>
                 <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="packaging">Packaging</button>
             </div>
-            
-            <div class="pinterest-grid" id="portfolio-grid">
-                <div class="pinterest-item" data-category="logo">
-                    <img src="/HAIDER_DESIGNING//images/posts/travelling/travelling.png" alt="Logo Design">
-                    <div class="portfolio-overlay">
-                        <h4>Bootique Logo</h4>
-                        <p>Logo Design</p>
-                    </div>
-                </div>
-                
-                <div class="pinterest-item" data-category="branding">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='350' viewBox='0 0 400 350'%3E%3Crect fill='%23FFEB3B' width='400' height='350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins' font-size='24' fill='%23000' font-weight='700'%3EBranding 1%3C/text%3E%3C/svg%3E" alt="Branding">
-                    <div class="portfolio-overlay">
-                        <h4>Brand Identity</h4>
-                        <p>Branding</p>
-                    </div>
-                </div>
-                
-                <div class="pinterest-item" data-category="social">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='350' viewBox='0 0 400 350'%3E%3Crect fill='%23000' width='400' height='350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins' font-size='24' fill='%23FFEB3B' font-weight='700'%3ESocial Media%3C/text%3E%3C/svg%3E" alt="Social">
-                    <div class="portfolio-overlay">
-                        <h4>Social Campaign</h4>
-                        <p>Social Media</p>
-                    </div>
-                </div>
-                
-                <div class="pinterest-item" data-category="logo">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='350' viewBox='0 0 400 350'%3E%3Crect fill='%23FFEB3B' width='400' height='350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins' font-size='24' fill='%23000' font-weight='700'%3ELogo Design 2%3C/text%3E%3C/svg%3E" alt="Logo 2">
+
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be loaded here -->
+                <!-- --------- -->
+                <!-- Logo Portion -->
+                <div class="portfolio-item" data-category="logo">
+                    <a
+                        href="https://www.instagram.com/p/DQpSkrPAHNG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+                        <img src="images/logo/artist/Artist.png" alt="Logo Design">
+                    </a>
+
                     <div class="portfolio-overlay">
                         <h4>Modern Logo</h4>
                         <p>Logo Design</p>
                     </div>
                 </div>
+                <div class="portfolio-item" data-category="logo">
+                    <a href="https://www.instagram.com/p/DQsExQeAI5P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+
+                        <img src="images/logo/honey-bee-logo/premimum honey.png" alt="Logo Design">
+                    </a>
+                    <div class="portfolio-overlay">
+                        <h4>Modern Logo</h4>
+                        <p>Logo Design</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="logo">
+                    <img src="images/logo/bootique/bootique_logo.png" alt="Logo Design">
+                    <div class="portfolio-overlay">
+                        <h4>Modern Logo</h4>
+                        <p>Logo Design</p>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item" data-category="branding">
+                    <img src="images/posts/green-apple/Greenapple-1.png" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <h4>GREEN APPLE | PURE TEA </h4>
+                        <p>Complete Branding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="social">
+                    <img src="images/posts/jacket/brandin.webp" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <h4>Jacket|Cool </h4>
+                        <p>Complete Branding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="social">
+                    <img src="images/posts/travelling/travelling.png" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <h4>travelling Post |HAIDER_DESIGNING </h4>
+                        <p>Post by haider_designing</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="social">
+                    <img src="images/posts/vacation-banner/EXPLORE-THE-WORLD-1.png" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <h4>Vacation Banner |EXPLORE THE WORLD</h4>
+                        <p>Post by haider_designing</p>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item" data-category="social">
+                    <img src="images/posts/coffee-shop/coffee-shop.webp" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <h4>Coffee Shop | Social Media Post</h4>
+                        <p>Post by haider_designing</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="portfolio-item" data-category="branding">
+                    <img src="images/posts/juice/Fresher.jpg" alt="Social Media">
+                    <div class="portfolio-overlay">
+                        <h4>Social Media Kit</h4>
+                        <p>Social Media Design</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="branding">
+                    <img src="images/posts/Summer-collection/sneaker.jpg" alt="Social Media">
+                    <div class="portfolio-overlay">
+                        <h4>Summer collection</h4>
+                        <p> <b>
+                                Sneaker
+                            </b>
+                            <br> <i> Design by haider_designing</i>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="packaging">
+                    <img src="images/posts/product-/product-jar.webp" alt="Packaging">
+                    <div class="portfolio-overlay">
+                        <h4>Product Packaging | Product Branding</h4>
+                        <p> <b>
+                                Jar
+                            </b>
+                            <br> <i> Design by haider_designing</i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="packaging">
+                    <img src="images/sticker/Ramadan sticker.webp" alt="Packaging">
+                    <div class="portfolio-overlay">
+                        <h4>Round Ramadan Sticker| Product Branding</h4>
+                        <p> <b>
+                                Round Sticker
+                            </b>
+                            <br> <i> Design by haider_designing</i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="branding">
+                    <img src="images/logo/Shaniel_logo/Cosmetic Product Bottle Mockup on White Background Free Cdr.png"
+                        alt="Logo">
+                    <div class="portfolio-overlay">
+                        <h4>Shaniel_logo</h4>
+                        <p>Design by HAIDER</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="logo">
+                    <img src="images/logo/Shaniel_logo/by Shaniel-1.png" alt="Logo">
+                    <div class="portfolio-overlay">
+                        <h4>Shaniel_logo</h4>
+                        <p>Design by HAIDER</p>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item" data-category="logo">
+                    <img src="images/logo/Shaniel_logo/by Shaniel.png" alt="Logo">
+                    <div class="portfolio-overlay">
+                        <h4>Shaniel_logo</h4>
+                        <p>Design by HAIDER</p>
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-item" data-category="branding">
+                    <img src="https://images.unsplash.com/photo-1567446537710-0e9b8d4f8c4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Business Cards">
+                    <div class="portfolio-overlay">
+                        <h4>Business Cards</h4>
+                        <p>Branding</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://instagram.com/haider_designing" target="_blank" class="btn-view-more">
+                    <i class="fab fa-instagram"></i> View More on Instagram
+                </a>
             </div>
         </div>
     </section>
 
-
-<script>
-// Custom Carousel Functionality
-class HeroCarousel {
-    constructor() {
-        this.carousel = document.getElementById('hero-carousel');
-        this.items = this.carousel.querySelectorAll('[data-carousel-item]');
-        this.indicators = this.carousel.querySelectorAll('[data-carousel-slide-to]');
-        this.currentIndex = 0;
-        this.autoplayInterval = null;
-        
-        this.init();
-    }
-    
-    init() {
-        // Next button
-        this.carousel.querySelector('[data-carousel-next]').addEventListener('click', () => this.next());
-        // Prev button
-        this.carousel.querySelector('[data-carousel-prev]').addEventListener('click', () => this.prev());
-        // Indicators
-        this.indicators.forEach((btn, index) => {
-            btn.addEventListener('click', () => this.goTo(index));
-        });
-        
-        this.show(0);
-        this.startAutoplay();
-    }
-    
-    show(index) {
-        this.currentIndex = (index + this.items.length) % this.items.length;
-        
-        // Hide all items
-        this.items.forEach(item => {
-            item.classList.add('hidden');
-        });
-        
-        // Show current item
-        this.items[this.currentIndex].classList.remove('hidden');
-        
-        // Update indicators
-        this.indicators.forEach((btn, i) => {
-            btn.classList.toggle('active', i === this.currentIndex);
-        });
-    }
-    
-    next() {
-        this.show(this.currentIndex + 1);
-        this.resetAutoplay();
-    }
-    
-    prev() {
-        this.show(this.currentIndex - 1);
-        this.resetAutoplay();
-    }
-    
-    goTo(index) {
-        this.show(index);
-        this.resetAutoplay();
-    }
-    
-    startAutoplay() {
-        this.autoplayInterval = setInterval(() => this.show(this.currentIndex + 1), 3000);
-    }
-    
-    resetAutoplay() {
-        clearInterval(this.autoplayInterval);
-        this.startAutoplay();
-    }
-}
-
-// Initialize carousel on page load
-document.addEventListener('DOMContentLoaded', () => {
-    new HeroCarousel();
-});
-</script>
-    <!-- ========== CONTACT SECTION ========== -->
-   
-    <section id="contact">
+    <!-- ========== TESTIMONIALS ========== -->
+    <section id="testimonials" class="testimonials-section">
         <div class="container">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
-            <p class="section-subtitle">Let's work together on your next project</p>
-            
+            <div class="section-header">
+                <span class="section-subtitle">Client Love</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Haider designed an amazing logo for my startup. His attention to detail and quick turnaround
+                            time was impressive!</p>
+                    </div>
+                    <div class="client-info">
+                        <h4>Ali Raza</h4>
+                        <span>Business Owner</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The social media posts Haider created for my brand went viral! He understands modern design
+                            trends perfectly.</p>
+                    </div>
+                    <div class="client-info">
+                        <h4>Sara Khan</h4>
+                        <span>Entrepreneur</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Professional, creative, and delivered beyond expectations. My packaging design attracted so
+                            many customers!</p>
+                    </div>
+                    <div class="client-info">
+                        <h4>Ahmed Malik</h4>
+                        <span>Product Seller</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
             <div class="row">
-                <!-- Contact Information -->
-                <div class="col-lg-5 mb-4">
+                <div class="col-lg-6">
                     <div class="contact-info">
-                        <h3 class="mb-4">Contact Information</h3>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                        <div class="section-header">
+                            <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
+                            <p class="section-description">
+                                Ready to transform your brand? Get in touch for a free consultation.
+                            </p>
+                        </div>
+
+                        <div class="contact-details">
+                            <a href="https://wa.me/923184855775?text=Hi%20need%20your%20Help%20in%20Designing">
+
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div>
+
+                                    <h4>WhatsApp Business</h4>
+                                    <p>+92 318 4855775</p>
+                                </div>
                             </div>
-                            <div class="contact-text">
-                                <h5>Location</h5>
-                                <p>Latifabad, Hyderabad, Sindh 71000<br>Pakistan</p>
+                            
+
+                            <a   href="instagram.com/haider_designing">
+                            <div class="contact-item">
+                                  
+                                  <div class="contact-icon">
+                                      <i class="fab fa-instagram"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Instagram DM</h4>
+                                        <p>@haider_designing</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Karachi,Pakistan</p>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h5>Phone</h5>
-                                <p>+92 321 8455775</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h5>Email</h5>
-                                <p>Available via Instagram DM</p>
-                            </div>
-                        </div>
-                        
+
                         <div class="social-links">
-                            <a href="https://www.instagram.com/haider_designing" target="_blank" class="social-link">
+                            <a href="https://instagram.com/haider_designing" target="_blank" class="social-link">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="social-link">
+                            <a href="https://facebook.com/Haider_Designing" class="social-link">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <a href="#" class="social-link">
+                            <a href="https://www.behance.net/haiderdesigning" class="social-link">
                                 <i class="fab fa-behance"></i>
                             </a>
-                            <a href="#" class="social-link">
+                            <a href="https://dribbble.com/Haider_Designing" class="social-link">
                                 <i class="fab fa-dribbble"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Contact Form -->
-                <div class="col-lg-7">
+
+                <div class="col-lg-6">
                     <div class="contact-form">
-                        <h3 class="mb-4">Send Me a Message</h3>
-                        <form id="contactForm">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                            <input type="text" class="form-control" placeholder="Subject" required>
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                            <button type="submit" class="btn-submit">Send Message</button>
+                        <h3>Send Your Project Details</h3>
+                        <form id="projectForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Business Name" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Phone/WhatsApp" required>
+                                </div>
+                            </div>
+
+                            <select class="form-control" required>
+                                <option value="">Select Service</option>
+                                <option value="logo">Logo Design</option>
+                                <option value="branding">Business Cards</option>
+                                <option value="social">Social Media Posts</option>
+                                <option value="packaging">Packaging Design</option>
+                                <option value="branding">Brand Identity</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                            <textarea class="form-control"  placeholder="Tell me about your project..." rows="4"
+                                required></textarea>
+                                <button type="submit" class="btn-submit">
+<a href="https://wa.me/923184855775?text=Hi%20need%20your%20Help%20in%20Designing">
+
+    <i class="fas fa-paper-plane"></i> Send Message
+</a>
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        
     </section>
-    
+
     <!-- ========== FOOTER ========== -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Haider Shaikh. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #FFEB3B;"></i> by Haider Designing</p>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h3>HAIDER</h3>
+                        <span>DESIGNING</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <p class="footer-text">
+                        © 2024 Haider Designing. All Rights Reserved.<br>
+                        Graphic Designer | Hyderabad, Pakistan
+                    </p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <a href="#home" class="back-to-top">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
-    
-    <!-- ========== FEEDBACK MODAL ========== -->
-    <div class="feedback-modal" id="feedbackModal">
-        <div class="feedback-content">
-            <button class="close-modal" id="closeModal">&times;</button>
-            <h3>How was your experience?</h3>
-            <p>We'd love to hear your feedback!</p>
-            
-            <div class="rating-stars" id="ratingStars">
-                <i class="fas fa-star star" data-rating="1"></i>
-                <i class="fas fa-star star" data-rating="2"></i>
-                <i class="fas fa-star star" data-rating="3"></i>
-                <i class="fas fa-star star" data-rating="4"></i>
-                <i class="fas fa-star star" data-rating="5"></i>
-            </div>
-            
-            <textarea class="form-control" id="feedbackText" placeholder="Tell us more about your experience (optional)"></textarea>
-            <button class="btn-submit" id="submitFeedback">Submit Feedback</button>
-        </div>
-    </div>
-    
+
+    <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+    <a href="https://wa.me/923184855775?text=Hi%20need%20your%20Help%20in%20Designing" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // ========== FEEDBACK MODAL FUNCTIONALITY ==========
-        // Show modal on page load
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                document.getElementById('feedbackModal').classList.add('show');
-            }, 2000); // Shows after 2 seconds
-        });
-        
-        // Close modal
-        document.getElementById('closeModal').addEventListener('click', function() {
-            document.getElementById('feedbackModal').classList.remove('show');
-        });
-        
-        // Close modal when clicking outside
-        document.getElementById('feedbackModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.classList.remove('show');
-            }
-        });
-        
-        // Star rating functionality
-        const stars = document.querySelectorAll('.star');
-        let selectedRating = 0;
-        
-        stars.forEach(star => {
-            star.addEventListener('click', function() {
-                selectedRating = this.getAttribute('data-rating');
-                updateStars(selectedRating);
-            });
-            
-            star.addEventListener('mouseover', function() {
-                const rating = this.getAttribute('data-rating');
-                updateStars(rating);
-            });
-        });
-        
-        document.getElementById('ratingStars').addEventListener('mouseout', function() {
-            updateStars(selectedRating);
-        });
-        
-        function updateStars(rating) {
-            stars.forEach(star => {
-                if (star.getAttribute('data-rating') <= rating) {
-                    star.classList.add('active');
-                } else {
-                    star.classList.remove('active');
-                }
-            });
-        }
-        
-        // Submit feedback
-        document.getElementById('submitFeedback').addEventListener('click', function() {
-            const feedbackText = document.getElementById('feedbackText').value;
-            
-            if (selectedRating === 0) {
-                alert('Please select a rating before submitting!');
-                return;
-            }
-            
-            // Here you can add code to send feedback to your server
-            console.log('Rating:', selectedRating);
-            console.log('Feedback:', feedbackText);
-            
-            alert('Thank you for your feedback!');
-            document.getElementById('feedbackModal').classList.remove('show');
-        });
-        
-        // ========== PORTFOLIO FILTER FUNCTIONALITY ==========
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('#portfolio-grid .pinterest-item');
-        
-        filterButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                
-                const filterValue = this.getAttribute('data-filter');
-                
-                portfolioItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-        
-        // ========== CONTACT FORM SUBMISSION ==========
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Here you can add code to send form data to your server
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-        
-        // ========== SMOOTH SCROLL FOR NAVIGATION ==========
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Close mobile menu if open
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse.classList.contains('show')) {
-                        navbarCollapse.classList.remove('show');
-                    }
-                }
-            });
-        });
-        
-        // ========== NAVBAR BACKGROUND ON SCROLL ==========
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-            } else {
-                navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-            }
-        });
-    </script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
+
 </html>
