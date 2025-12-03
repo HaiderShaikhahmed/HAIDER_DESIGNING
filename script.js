@@ -719,6 +719,27 @@ function initTypingAnimation() {
     
     type();
 }
+const select = document.querySelector(".custom-select");
+const selected = select.querySelector(".selected");
+const options = select.querySelector(".options");
+const hiddenInput = document.querySelector("#service");
+
+selected.addEventListener("click", () => {
+    options.style.display = options.style.display === "block" ? "none" : "block";
+});
+
+options.querySelectorAll("li").forEach(option => {
+    option.addEventListener("click", () => {
+        selected.textContent = option.textContent;
+        hiddenInput.value = option.getAttribute("data-value");
+        options.style.display = "none";
+    });
+});
+
+document.addEventListener("click", (e) => {
+    if (!select.contains(e.target)) options.style.display = "none";
+});
+
 
 // Add cursor effect
 document.addEventListener('mousemove', function(e) {

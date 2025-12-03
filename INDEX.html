@@ -556,7 +556,23 @@
                                 </div>
                             </div>
 
-                            <select class="form-control" required>
+
+                            <div class="custom-select">
+    <div class="selected">Select Service</div>
+    <ul class="options">
+        <li data-value="logo">Logo Design</li>
+        <li data-value="business-cards">Business Cards</li>
+        <li data-value="social">Social Media Posts</li>
+        <li data-value="packaging">Packaging Design</li>
+        <li data-value="brand-identity">Brand Identity</li>
+        <li data-value="other">Other</li>
+    </ul>
+</div>
+
+<input type="hidden" name="service" id="service">
+
+
+                            <!-- <select class="form-control" required>
                                 <option value="">Select Service</option>
                                 <option value="logo">Logo Design</option>
                                 <option value="branding">Business Cards</option>
@@ -564,7 +580,7 @@
                                 <option value="packaging">Packaging Design</option>
                                 <option value="branding">Brand Identity</option>
                                 <option value="other">Other</option>
-                            </select>
+                            </select> -->
 
                             <textarea class="form-control"  placeholder="Tell me about your project..." rows="4"
                                 required></textarea>

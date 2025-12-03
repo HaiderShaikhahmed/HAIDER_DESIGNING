@@ -811,6 +811,49 @@ section {
     color: var(--light);
 }
 
+.custom-select {
+     margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.custom-select .selected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-select .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(30, 30, 40, 1);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.custom-select .options li {
+    padding: 12px 15px;
+    color: #fff;
+}
+
+.custom-select .options li:hover {
+    background: rgba(99, 102, 241, 0.3);
+}
+
 .form-control {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(99, 102, 241, 0.3);
@@ -838,6 +881,9 @@ select.form-control {
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 16px;
+    color: var(--light);
+    
+    
 }
 
 .btn-submit {
