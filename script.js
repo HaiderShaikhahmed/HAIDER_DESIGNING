@@ -736,6 +736,7 @@ options.querySelectorAll("li").forEach(option => {
     });
 });
 
+
 document.addEventListener("click", (e) => {
     if (!select.contains(e.target)) options.style.display = "none";
 });
